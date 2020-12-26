@@ -1,9 +1,9 @@
 ---
 type: post
-title: v1.0.0
+title:
 date: 2019-07-22
 draft: false
-author: Abdessalam
+author: The DataDesign Team
 tags:
   - New
 ---
