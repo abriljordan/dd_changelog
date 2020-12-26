@@ -19,7 +19,7 @@ module.exports = {
 			options: {
 				basePath: "", // base url "/"
 				tagsPath: "", // tags url "/tags"
-				contentPath: `./content/posts`, // content url for posts"/content/posts"
+				contentPath: `/content/posts`, // content url for posts"/content/posts"
 				assetPath: "" //  assets url "/content/assets"
 			},
     },
