@@ -1,10 +1,28 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    url: `www.datadesign.io`,
+    title: `DataDesign Changelog`,
+    description: `Changelog for DataDesign.`,
+    author: `The DataDesign Team`,
+    logo: `logo-icon.png`,
+    locale: `en`,
+    themeConfig: {
+			themeSwitcher: true, // enable theme switcher
+			loadMorePosts: false, // enable load more posts
+			postsPerPage: 10, // posts to display per page
+			postsIncrementBy: 5 // posts increment value
+		}
   },
   plugins: [
+    {
+      resolve: `gatsby-theme-changelog`,
+			options: {
+				basePath: "", // base url "/"
+				tagsPath: "", // tags url "/tags"
+				contentPath: `./content/posts`, // content url for posts"/content/posts"
+				assetPath: "" //  assets url "/content/assets"
+			},
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
